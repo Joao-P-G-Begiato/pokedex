@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="https://cdn.datatables.net/v/dt/dt-1.13.6/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/r-2.5.0/sl-1.7.0/datatables.min.css" rel="stylesheet">
+        <link href="./style/index.css" rel="stylesheet">
+        <link href="./style/types.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/r-2.5.0/sl-1.7.0/datatables.min.js"></script>
+        <script src="./index.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png">
+            <nav>
+                <section class="searchSection">
+                    <label class="searchLabel"> 
+                        Choose your Pokemon
+                    </label>
+                    <input id="input-pkmn" class="searchInput" type="text" placeholder="pokemon's name or number">
+                    <button onclick='btnClick()' class="searchBtn" type="button"></button>
+                </section>
+            </nav>
+            <section>
+            </section>
+        </header>
+        <main>
+            <section class="pokeInfo">
+                <img class="pokemonImage">
+                <h3 class="pokemonName"></h3><br>
+                <section class="pokmeonTypes"></section>
+                <section class="pokmeonAbilities"></section>
+            </section>
+            <section class="pokemonOtherInfo">
+                <img class="pokemonImage" id="pokemonImage">
+                <section class="size">
+                    <p class="pokemonWeight"></p>
+                    <p class="pokemonHeight"></p>
+                </section>
+
+                <section class="pokemonStats">
+
+                </section>
+            </section>
+        </main>
+        <section class="modal fade " id="modalMoveSets" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  data-backdrop="static">
+            <section class="modal-dialog ">
+                <section class="modal-content">
+                    <section class="modal-header">
+                    <h5 class="modal-title modal-title-product">Move Set</h5>                    
+                    </section>                
+                    <section class="modal-body">
+                        <table id="pokemonMoveSet">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Learn Method</th>
+                                    <th>Level</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </section>
+                    <section class="modal-footer">
+                        <button type="button" id="closeModal" class="btn btn-secondary closeModal" data-dismiss="modal">close</button>                                         
+                    </section>
+                </section>
+            </section>
+        </section>    
+    </body>
+</html>

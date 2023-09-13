@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "pokemonHollow";
+    src: url(../assets/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+    font-family: "pokemonSolid";
+    src: url(../assets/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+    font-family: "pokemonClassic";
+    src: url(../assets/Pokemon-Classic.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EF5350;
+    margin: 0;
+    min-height: 71px;
+}
+
+main{
+    min-height: calc(100vh - 71px);
+    background-repeat: no-repeat;
+    background-size: 20% ;
+    background-position: 50%;
+    background-color: #202124;
+    color:#fff;
+    font-family: "pokemonClassic", fantasy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p{
+    margin:0
+}
+
+.logo{
+    height: 30px;
+}
+
+.searchSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.searchInput{
+    border-radius: 20px;
+    padding: 6px;
+    font-family: 'pokemonClassic';
+}
+
+.searchBtn{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    font-family: 'pokemonSolid';
+    text-align: center;
+    background:-webkit-linear-gradient(270deg, #f04037 45%, rgba(0, 0, 0, 0) 50%), -webkit-linear-gradient(270deg, #000 60%, #fff 60%);
+    color: black
+}
+
+.searchBtn:hover{
+    background:-webkit-linear-gradient(270deg, #f04037e6 45%, rgba(0, 0, 0, 0) 50%), -webkit-linear-gradient(270deg, #000 60%, #fff 60%);
+    box-shadow:  0px 0px 5px black;
+}
+
+.moveset{
+    min-height: 71px;
+    min-width: 71px;
+    max-width: 120px;
+    border-radius: 50px;
+    background-color: #EF5350;
+    color: white;
+    border-color: white;
+    margin: 20px 0;
+    align-self: center;
+}
+
+.closeModal{
+    background-color: #EF5350;
+}
+
+#pokemonMoveSet{
+    width: 40vw !important;
+}
+
+
+.searchLabel{
+    font-family: 'pokemonSolid';
+    color: #FFCC03;
+    text-shadow: -2px 1px #1C356F  ;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2675BC;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.pokemonName{
+    margin: 0;
+}
+
+.pokemonImage{
+    width:fit-content
+}
+
+.size{
+    display: flex;
+    height: 31px
+}
+
+.pokemonHeight{
+    margin-left: 20px;
+}
+
+.pokmeonAbilities{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.modal-content{
+
+    background-color: #202124;
+    color: white;
+    font-family: 'pokemonClassic';
+}
+
+.modal-dialog{
+    max-width: 50vw;
+}

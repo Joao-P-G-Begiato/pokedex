@@ -1,0 +1,83 @@
+.pokmeonTypes{
+    display: flex;
+    gap: 0 10px;
+}
+
+.type{
+    min-width: 130px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.fire{
+    background-color: #f17f31 ;
+}
+
+.normal{
+    background-color: #AAA878 ;
+}
+
+.water{
+    background-color: #6790f0 ;
+}
+
+.fighting{
+    background-color: #C22F28 ;
+}
+
+.grass{
+    background-color: #78C750 ;
+}
+
+.poison{
+    background-color: #9F41A1 ;
+}
+
+.electric{
+    background-color: #F9D02F ;
+}
+
+.ground{
+    background-color: #DFC06E ;
+}
+
+.psychic{
+    background-color: #F75984 ;
+}
+
+.rock{
+    background-color: #B7A038 ;
+}
+
+.ice{
+    background-color: #99D7D9 ;
+}
+
+.bug{
+    background-color: #A9B820 ;
+}
+
+.dragon{
+    background-color:#7039F5 ;
+}
+
+.ghost{
+    background-color: #705798 ;
+}
+
+.dark{
+    background-color: #705748 ;
+}
+
+.steel{
+    background-color: #B8B8D1 ;
+}
+
+.fairy{
+    background-color: #EF98AE ;
+}
+
+.flying{
+    background-color: #A990EE ;
+}
